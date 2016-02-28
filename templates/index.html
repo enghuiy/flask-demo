@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	<head>
+        <head>
 		<meta charset="utf-8">
 		<title>Stock Prices</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -8,8 +8,19 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div>
-  			<h1>Enghui's stock price plot</h1>
+		<div class=page>
+		  <h1>Enghui's stock price plot</h1>
+
+		  <div class=metanav>
+
+		    <h4>Enter stock ticker (e.g. INTC)</h4>
+		    <form id='input' method='post' action='index'>
+		      <p>
+		      Ticker Symbol:<input type='text' name='ticker'/>
+		      </p>
+		    </form>
+		  </div>  
+
 		</div>
 	</body>
 </html>
