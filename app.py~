@@ -24,15 +24,15 @@ def index():
     data=zip(*[line.split(',') for line in rtext])
 
     # put into a pandas dataframe
-#    df=pd.DataFrame({'date':pd.to_datetime(data[0]),
+    df=pd.DataFrame({'date':pd.to_datetime(data[0]),
 #                 'price':pd.to_numeric(data[1])})
-#    df['price']=df['price'].astype('float')
+    df['price']=df['price'].astype('float')
 
     # plot with bokeh
-    #plot = figure(width=450, height=450, y_axis_label='Stock Price', x_axis_label='date', x_axis_type='datetime')
+    plot = figure(width=450, height=450, y_axis_label='Stock Price', x_axis_label='date', x_axis_type='datetime')
     #plot.circle([1,2,3,4],[1,1,1,1],color='green')
-    plot = figure()
-    plot.circle([1,2], [3,4])
+    #plot = figure()
+    #plot.circle([1,2], [3,4])
 
     #plot.line(df['date'],df['price'],color='green',line_width=3)
 

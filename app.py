@@ -24,8 +24,7 @@ def index():
     data=zip(*[line.split(',') for line in rtext])
 
     # put into a pandas dataframe
-    df=pd.DataFrame({'date':pd.to_datetime(data[0]),
-#                 'price':pd.to_numeric(data[1])})
+    df=pd.DataFrame({'date':pd.to_datetime(data[0]),'price':pd.to_numeric(data[1])})
     df['price']=df['price'].astype('float')
 
     # plot with bokeh
