@@ -33,7 +33,7 @@ def index():
     #plot = figure()
     #plot.circle([1,2], [3,4])
 
-    #plot.line(df['date'],df['price'],color='green',line_width=3)
+    plot.line(df['date'],df['price'],color='green',line_width=3)
 
     script, div = components(plot)
     return render_template('graph.html', ticker=ticker, script=script, div=div)
