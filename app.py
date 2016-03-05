@@ -16,7 +16,7 @@ def index():
 
     # get stock data from quandl
     ticker=request.form['ticker']
-    api_url = 'https://www.quandl.com/api/v3/datasets/WIKI/%s/data.csv?column_index=4&exclude_column_names&&order=asc&rows=10' %ticker
+    api_url = 'https://www.quandl.com/api/v3/datasets/WIKI/%s/data.csv?column_index=4&exclude_column_names&&order=asc' %ticker
     session = requests.Session()
     session.mount('http://', requests.adapters.HTTPAdapter(max_retries=3))
     raw_data = session.get(api_url)
